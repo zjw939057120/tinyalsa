@@ -19,8 +19,8 @@ set(libtinyalsa
 add_executable(tinyplay tinyplay.c ${libtinyalsa})
 target_link_libraries(tinyplay -ldl)
 
-add_executable(tinyalsa tinyhostless.c ${libtinyalsa})
-target_link_libraries(tinyalsa -ldl)
+add_executable(tinycap tinycap.c ${libtinyalsa})
+target_link_libraries(tinycap -ldl)
 
 add_executable(tinymix tinymix.c ${libtinyalsa})
 target_link_libraries(tinymix -ldl)
